@@ -97,13 +97,13 @@ setMethod("spectralBinning",
 									select(-fileName,-polarity)
 							})
 						
-						if (isTRUE(verbose)) message('Gathering file headers')
-						headers <- getHeaders(files)
+						#if (isTRUE(verbose)) message('Gathering file headers')
+						#headers <- getHeaders(files)
 						
 						binnedData(x) <- binned_data
 						accurateData(x) <- accurate_mz
-						spectra(x) <- list(headers = headers, 
-															 fingerprints = pks)
+						#spectra(x) <- list(headers = headers, 
+						#									 fingerprints = pks)
 						
 						return(x)
 					}
